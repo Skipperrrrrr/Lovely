@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For Loretta, With Love</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --purple:#6a0dad;
+      --yellow:#ffde59;
+      --light-purple:#f5e8ff;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family:'Poppins',sans-serif;
+      background:var(--light-purple);
+      color:#333;
+      line-height:1.7;
+    }
+    header{
+      background:var(--purple);
+      color:#fff;
+      padding:60px 20px;
+      text-align:center;
+      position:relative;
+      overflow:hidden;
+    }
+    header h1{font-size:2.5rem;margin-bottom:10px;animation:pop 1s ease forwards}
+    header h2{font-weight:400;font-size:1.2rem;opacity:0.9}
+    section{padding:60px 20px;max-width:1100px;margin:auto;opacity:0;transform:translateY(40px);}
+    h2.section-title{
+      text-align:center;
+      font-size:2rem;
+      color:var(--purple);
+      margin-bottom:30px;
+    }
+    /* Gallery */
+    .gallery-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+      gap:18px;
+    }
+    .gallery-grid img{
+      width:100%;
+      height:250px;
+      object-fit:cover;
+      border-radius:12px;
+      transition:transform .3s ease, box-shadow .3s ease;
+    }
+    .gallery-grid img:hover{
+      transform:scale(1.05);
+      box-shadow:0 8px 20px rgba(0,0,0,.15);
+    }
+    figcaption{
+      text-align:center;
+      font-size:0.9rem;
+      margin-top:6px;
+    }
+    /* Floating buttons */
+    .floating-btn{
+      position:fixed;
+      bottom:20px;
+      padding:12px 18px;
+      border:none;
+      border-radius:25px;
+      font-size:0.9rem;
+      cursor:pointer;
+      transition:.25s;
+      font-family:'Poppins',sans-serif;
+      box-shadow:0 4px 12px rgba(0,0,0,.25);
+    }
+    #jazz-btn{
+      left:20px;
+      background:var(--yellow);
+      color:#000;
+    }
+    #proposal-btn{
+      right:20px;
+      background:var(--purple);
+      color:#fff;
+    }
+    #jazz-btn:hover,
+    #proposal-btn:hover{
+      transform:translateY(-4px);
+    }
+    /* Animations */
+    @keyframes fadeUp{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes pop{0%{transform:scale(0.8);opacity:0}100%{transform:scale(1);opacity:1}}
+    .visible{animation:fadeUp .8s forwards;}
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Hi Pudding 😘</h1>
+  <h2>Happy 3 Years of Us ❤️</h2>
+</header>
+
+<section id="our-story" class="section">
+  <h2 class="section-title">💑 Our Story</h2>
+  <p>We met in the university. We were both 17... (full story content here)</p>
+</section>
+
+<section id="our-future" class="section">
+  <h2 class="section-title">🌍 Where We're Going</h2>
+  <p>I want to go on trips with you all around the world... (future content)</p>
+</section>
+
+
+<section id="our-story" style="padding: 60px 20px; background-color: #fffafc;">
+  <h2 style="text-align: center; color: #6a1b9a;">📖 Our Story</h2>
+  <div style="max-width: 800px; margin: 0 auto; font-size: 18px; line-height: 1.8;">
+    <p>We met in the university. We were both 17. I was in second year and she was a fresher...</p>
+    <p>Every day for four years, I thought about you, came to your room, ate your food, tried to make you laugh...</p>
+    <p>On the 5th of July, 2022, I popped the question (not the biggest one but the phrase still works😂😂)...</p>
+    <p>I remember one fun memory; we went to Hillview hotel to just sit and chill... with our Waakye 😂</p>
+    <p>I’ll forever laugh at your English even though technically you understand and know way more words than I do😭😂😂.</p>
+  </div>
+</section>
+
+
+<section id="our-future" style="padding: 60px 20px; background-color: #f0f8ff;">
+  <h2 style="text-align: center; color: #6a1b9a;">🌍 Where We're Going</h2>
+  <div style="max-width: 800px; margin: 0 auto; font-size: 18px; line-height: 1.8;">
+    <p>I want to go on trips with you all around the world — especially to the tropical places you love. Zanzibar, Korea, Brazil, the US, Maldives, Santorini, Bermuda Island, Jamaica, the Caribbeans... and last but not least, Switzerland.</p>
+    <p>I see a happy marriage because I chose to be with you and no one else. And I’ll always remind you — I’d choose you even if you were a twin.</p>
+    <p>I see a home with you as our spiritual covering, teaching our kids to love the Lord and serve Him. A home where you are your husband’s biggest support — loving, wise, and radiant.</p>
+    <p>And in that home, we’ll have our twins: <strong>Nyameye and Adom</strong> 🧸</p>
+  </div>
+</section>
+
+<section id="gallery" class="section">
+  <h2 class="section-title">📷 Our Gallery</h2>
+  <div class="gallery-grid">
+    <!-- Example gallery item -->
+    <figure>
+      <img src="images/2018-meeting-1.jpg" alt="Our first picture">
+      <figcaption>Our first picture 💫</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="letters" class="section">
+  <h2 class="section-title">💌 Letters from Loretta</h2>
+  <div class="gallery-grid">
+    <figure><img src="images/letter-1.jpg" alt="Letter 1"><figcaption>Hey Bubba</figcaption></figure>
+    <figure><img src="images/letter-2.jpg" alt="Letter 2"><figcaption>Hey Teddy</figcaption></figure>
+    <figure><img src="images/letter-3.jpg" alt="Letter 3"><figcaption>FLAMES Test</figcaption></figure>
+  </div>
+</section>
+
+<section id="playlist" class="section">
+  <h2 class="section-title">🎧 For Borborr</h2>
+  <iframe style="border-radius:12px;width:100%;height:380px" src="https://open.spotify.com/embed/playlist/7AaQ6KykXSgQNxaYDaEMfJ?utm_source=generator" frameborder="0" allow="autoplay;clipboard-write;encrypted-media;fullscreen;picture-in-picture" loading="lazy"></iframe>
+</section>
+
+<!-- Audio & Buttons -->
+<audio id="bg-jazz" src="audio/soft-jazz.mp3" preload="auto" loop></audio>
+<button id="jazz-btn" class="floating-btn">Play Soft Jazz 🎷</button>
+<a href="secret.html" id="proposal-btn" class="floating-btn">One Last Thing...</a>
+
+<script>
+  // Scroll animation
+  const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){entry.target.classList.add('visible');}
+    });
+ },{threshold:0.2});
+  document.querySelectorAll('.section').forEach(sec=>observer.observe(sec));
+
+  // Jazz player
+  const jazzBtn=document.getElementById('jazz-btn');
+  const bgJazz=document.getElementById('bg-jazz');
+  let playing=false;
+  jazzBtn.addEventListener('click',()=>{
+    if(!playing){bgJazz.play();jazzBtn.textContent='Pause Jazz 🎶';playing=true;}
+    else{bgJazz.pause();jazzBtn.textContent='Play Soft Jazz 🎷';playing=false;}
+  });
+</script>
+
+
+<audio autoplay loop>
+  <source src="audio/soft-jazz.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+</body>
+</html>
